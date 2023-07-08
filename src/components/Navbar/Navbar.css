@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 248, 250);
+}
+
+/* -------------------------------------------- */
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    justify-content: space-between;
+    border-bottom: 1px rgb(173, 171, 171) solid;
+    -webkit-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    -moz-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+  }
+
+  .searchButton {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+  }
+
+  .inputSearch {
+    height: 20px;
+    font-size: 20px;
+    width: 150px;
+  }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    height: 25px;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    justify-content: space-between;
+    border-bottom: 1px rgb(173, 171, 171) solid;
+    -webkit-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    -moz-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+  }
+
+  .sectionOne {
+    display: flex;
+    align-items: center;
+  }
+
+  .divider {
+    height: 25px;
+    border-left: 1.8px solid rgba(212, 212, 212, 0.822);
+    margin: 0 2px;
+  }
+
+  .searchButton {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+  }
+
+  .inputSearch {
+    height: 25px;
+    font-size: 15px;
+    width: 400px;
+    margin-left: 15px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.822);
+    outline: none; /* Agrega esta línea para quitar el contorno de enfoque */
+  }
+
+  .inputSearch:focus {
+    border-bottom: 1px solid rgba(212, 212, 212, 0.822); /* Establece el borde a transparente cuando tiene el enfoque */
+  }
+
+  .favoriteIcon {
+    margin-right: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .starIcon {
+    font-size: 20px;
+  }
+
+  .starIcon:hover {
+    color: rgb(228, 207, 20);
+  }
+
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+  .logo {
+    height: 35px;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    justify-content: space-between;
+    border-bottom: 1px rgb(173, 171, 171) solid;
+    -webkit-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    -moz-box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+    box-shadow: 0px 10px 24px -12px rgba(163, 161, 163, 1);
+  }
+
+  .sectionOne {
+    display: flex;
+    align-items: center;
+  }
+
+  .divider {
+    height: 35px;
+    border-left: 2px solid rgba(212, 212, 212, 0.822);
+    margin: 0 15px;
+  }
+
+  .searchButton {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+  }
+
+  .inputSearch {
+    height: 35px;
+    font-size: 20px;
+    width: 400px;
+    margin-left: 15px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.822);
+    outline: none; /* Agrega esta línea para quitar el contorno de enfoque */
+  }
+
+  .inputSearch:focus {
+    border-bottom: 1px solid rgba(212, 212, 212, 0.822); /* Establece el borde a transparente cuando tiene el enfoque */
+  }
+
+  .favoriteIcon {
+    margin-right: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .starIcon {
+    font-size: 25px;
+  }
+
+  .starIcon:hover {
+    color: rgb(243, 121, 22);
+  }
+}

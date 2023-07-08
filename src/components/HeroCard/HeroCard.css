@@ -1,0 +1,46 @@
+/* -------------------------------------------- */
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .container {
+    height: 400px;
+    width: 75%;
+    background-color: red;
+    position: relative;
+  }
+
+  .container:hover {
+  border: 1px solid #529cfc;
+  }
+
+  .icon {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffff;
+  }
+
+  .heroName {
+    font-size: 23px;
+    position: absolute;
+    color: #ffff;
+    top: 85%;
+    right: 70%;
+
+  }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+
+}
