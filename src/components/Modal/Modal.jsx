@@ -3,7 +3,8 @@ import { HeroCardProfile } from "../HeroCardProfile/HeroCardProfile";
 import "./Modal.css";
 import { ImCross } from "react-icons/im";
 
-export const Modal = () => {
+// eslint-disable-next-line react/prop-types
+export const Modal = ({name}) => {
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -21,7 +22,7 @@ return (
             <div href="#close" title="Close" className="close" onClick={closeModal}>
               <ImCross />
             </div>
-            <h2 className="nameCharacter">Spider-man</h2>
+            <h2 className="nameCharacter">{name}</h2>
           </div>
           <div className="contenido">
             <HeroCardProfile />

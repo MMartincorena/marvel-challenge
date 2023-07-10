@@ -1,0 +1,84 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .workSpace {
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 10% 5%;
+  }
+
+  .partOne {
+    height: 60%;
+    background-image: url(../assets/img/hero.png);
+    background-size: cover;
+  }
+
+  .partTwo {
+    margin-top: 10%;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .details p {
+    font-weight: 600;
+  }
+
+  .details {
+    margin-bottom: 25px;
+  }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .workSpace {
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 10% 5%;
+  }
+
+  .partOne {
+    height: 60%;
+    background-image: url(../assets/img/hero.png);
+    background-size: cover;
+  }
+
+  .partTwo {
+    margin-top: 10%;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .details p {
+    font-weight: 600;
+  }
+
+  .details {
+    margin-bottom: 25px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media (min-width: 1025px) {
+}
+
+/* ---------------------------------------------- */

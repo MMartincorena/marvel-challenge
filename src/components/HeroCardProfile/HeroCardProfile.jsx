@@ -1,33 +1,25 @@
 import "./HeroCardProfile.css";
 import { AiFillStar /*  AiOutlineStar  */ } from "react-icons/ai";
 
-export const HeroCardProfile = () => {
+// eslint-disable-next-line react/prop-types
+const HeroCardProfile = ({ name, description, image }) => {
+  const backgroundImageStyle = {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover",
+  };
+
   return (
     <div className="cardHero">
-      <div
-        className="heroBox"
-        style={{
-          backgroundImage: "url(../../src/assets/img/hero.png)",
-          backgroundSize: "cover",
-        }}
-      ></div>
+      <div className="heroBox" style={backgroundImageStyle}></div>
       <div className="detalles">
         <div className="titulo">
-          <h2 className="textTitle">Spider - Man</h2>
-          <div className="icono" />
+          <h2 className="textTitle">{name}</h2>
           <AiFillStar className="icono" />
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          quidem fugiat eos provident alias minima eligendi ipsum voluptatibus
-          perspiciatis explicabo repudiandae tempore necessitatibus maiores quia
-          nulla, voluptas quasi cum dolorem!Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Adipisci quidem fugiat eos provident
-          alias minima eligendi ipsum voluptatibus perspiciatis explicabo
-          repudiandae tempore necessitatibus maiores quia nulla, voluptas quasi
-          cum dolorem!
-        </p>
+        <p>{description}</p>
       </div>
     </div>
   );
 };
+
+export default HeroCardProfile;
