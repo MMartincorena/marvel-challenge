@@ -1,28 +1,38 @@
-import "./Navbar.css";
-import { AiFillStar /* , AiOutlineStar */ } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
-/* import { BsSearch } from "react-icons/bs"; */
+import "./Navbar.css";
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ onFilterChange }) => {
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    onFilterChange(value);
+  };
+
   return (
     <nav className="navbar">
       <div className="sectionOne">
         <Link to="/">
           <img
-            src="../../src/assets/img/logo_Marvel.png"
+            src={"../../src/assets/img/logo_Marvel.png"}
             alt=""
             className="logo"
           />
         </Link>
-        <div className="divider"></div> {/* Agrega la línea divisoria */}
+        <div className="divider"></div>
         <form>
-          <input type="text" placeholder={"Buscar"} className="inputSearch" />
+          <input
+            type="text"
+            placeholder={"Buscar"}
+            className="inputSearch"
+            onChange={handleInputChange}
+          />
         </form>
       </div>
       <Link to="/favorites">
-      <div className="favoriteIcon">
-        <AiFillStar className="starIcon" />
-      </div>
+        <div className="favoriteIcon">
+          <AiFillStar className="starIcon" />
+        </div>
       </Link>
     </nav>
   );
