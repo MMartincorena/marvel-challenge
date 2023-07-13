@@ -3,6 +3,7 @@ import Home from "./routes/home";
 import Favorites from "./routes/favorites";
 import NotFound from "./routes/404";
 import Comic from "./routes/comic";
+import Modal from "./components/Modal/Modal";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       {/*       <Navbar />*/}
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/modal" element={<Modal />} />
         <Route exact path="/favorites" element={<Favorites />} />
         <Route exact path="/comic" element={<Comic />} />
         <Route path="*" element={<NotFound />} />

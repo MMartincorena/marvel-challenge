@@ -23,7 +23,6 @@ const Home = () => {
         console.log("No se pudo tener acceso a los datos de la API");
       }
     };
-
     fetchData();
   }, []);
 

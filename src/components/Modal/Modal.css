@@ -1,68 +1,231 @@
-.encabezado {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 55px;
-  padding: 20px 20px 0px 20px;
+html,
+body,
+#root {
+  height: 100%;
 }
 
-.contenido {
-  margin-top: 60px;
-  height: calc(100% - 55px);
-  overflow-y: scroll;
-  padding: 0 20px;
+@media (max-width: 768px) {
+  .encabezado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .contenido {
+    margin-top: 60px;
+    height: calc(100% - 55px);
+    overflow-y: scroll;
+    padding: 0 20px;
+  }
+
+  .nameCharacter {
+    color: rgb(86, 87, 86);
+  }
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 90%;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 5px 0px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .close {
+    color: #000;
+    line-height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
 }
 
-.nameCharacter {
-  color: rgb(86, 87, 86);
+/* ----------------------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .encabezado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .contenido {
+    margin-top: 60px;
+    height: calc(100% - 55px);
+    overflow-y: scroll;
+    padding: 0 20px;
+  }
+
+  .nameCharacter {
+    color: rgb(86, 87, 86);
+  }
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 60%;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 5px 0px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .close {
+    color: #000;
+    line-height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
 }
 
-.modalDialog {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
+/* ---------------------------------------------- */
+
+@media (min-width: 1025px) {
+
+  .encabezado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .contenido {
+    margin-top: 60px;
+    height: calc(100% - 55px);
+    overflow-y: scroll;
+    padding: 0 20px;
+  }
+
+  .nameCharacter {
+    color: rgb(86, 87, 86);
+  }
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 40%;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 5px 0px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .close {
+    color: #000;
+    line-height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close:hover {
+    cursor: pointer;
+  }
 }
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-.modalDialog > div {
-  width: 90%;
-  height: 400px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: auto;
-  padding: 5px 0px;
-  border-radius: 8px;
-  background: #fff;
-}
-.close {
-  color: #000;
-  line-height: 25px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.close:hover {
-  cursor: pointer;
-}
+
+/* ---------------------------------------------- */

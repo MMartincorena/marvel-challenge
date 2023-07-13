@@ -1,5 +1,27 @@
-.card-container{
+@media (max-width: 768px) {
+  .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
