@@ -3,12 +3,12 @@ import "./HeroCard.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 // eslint-disable-next-line react/prop-types
-const HeroCard = ({ name, image}) => {
-   const [filled, setFilled] = useState(true);
- 
-   const handleIconStarClick = () => {
+const HeroCard = ({ name, image, setModal }) => {
+  const [filled, setFilled] = useState(true);
+
+  const handleIconStarClick = () => {
     setFilled(!filled);
-  }; 
+  };
 
   const backgroundImageStyle = {
     backgroundImage: `url(${image})`,
@@ -19,6 +19,7 @@ const HeroCard = ({ name, image}) => {
     <div
       className="container"
       style={backgroundImageStyle}
+      onClick={() => setModal({ details: { name, image }, open: true })}
     >
       <div className="iconContainer" onClick={handleIconStarClick}>
         {filled ? (
