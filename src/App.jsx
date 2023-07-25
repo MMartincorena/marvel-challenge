@@ -13,7 +13,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/modal" element={<Modal />} />
         <Route exact path="/favorites" element={<Favorites />} />
-        <Route exact path="/comic" element={<Comic />} />
+        <Route exact path="/comic/:id" element={<Comic />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

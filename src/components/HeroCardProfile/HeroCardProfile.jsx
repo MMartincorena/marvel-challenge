@@ -16,7 +16,7 @@ const HeroCardProfile = () => {
           <h2 className="textTitle">Martin</h2>
           <AiFillStar className="icono" />
         </div>
-        <p>{"holis"}</p>
+        <p>{"texto"}</p>
       </div>
     </div>
   );

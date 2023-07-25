@@ -2,8 +2,14 @@
   width: 100%;
   height: 80px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  padding: 1%;
 }
+
+.cardHero:hover {
+  box-shadow: 0 0 0 3px #09346d;
+  cursor: pointer;
+  } 
 
 .detalles {
   width: calc(100% - 80px);
@@ -21,8 +27,8 @@
 }
 
 .heroBox {
-  height: 80px;
-  width: 80px;
+  height: 74px;
+  width: 74px;
   background-color: blue;
   border-radius: 5px;
 }

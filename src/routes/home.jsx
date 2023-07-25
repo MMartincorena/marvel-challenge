@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import HeroCard from "../components/HeroCard/HeroCard";
+import Modal from "../components/Modal/Modal";
 import Navbar from "../components/Navbar/Navbar";
 import "./Home.css";
 
@@ -8,7 +9,7 @@ const Home = () => {
     "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=ba9f38df312b99cb16056792f9585fdb&hash=2c00c977d27cf34cddf75dc477d7f831";
 
   const [characters, setCharacters] = useState([]);
-
+  const [modal, setModal] = useState({ details: {}, open: false });
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
@@ -33,6 +34,7 @@ const Home = () => {
   return (
     <>
       <Navbar onFilterChange={handleFilterChange} />
+      <Modal details={modal.details} open={modal.open} setModal={setModal} />
       <div className="card-container">
         {characters.map((character) => {
           if (
@@ -43,7 +45,9 @@ const Home = () => {
           }
           return (
             <HeroCard
+              setModal={setModal}
               key={character.id}
+              character={character}
               name={character.name}
               image={
                 character.thumbnail?.path +

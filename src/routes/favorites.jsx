@@ -1,10 +1,16 @@
-function Favorites() {
+import Navbar from "../components/Navbar/Navbar";
+
+const Favorites = () => {
   return (
-    <div>
-      <h1>¡Pantalla de favoritos!</h1>
-      {/* Contenido adicional */}
-    </div>
+    <>
+      <Navbar />
+
+      <div>
+        <h1>¡Pantalla de favoritos!</h1>
+        {/* Contenido adicional */}
+      </div>
+    </>
   );
-}
+};
 
 export default Favorites;

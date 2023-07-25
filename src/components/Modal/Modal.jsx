@@ -1,23 +1,14 @@
-import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import "./Modal.css";
-import '../HeroCard/HeroCard.css'
+import "../HeroCard/HeroCard.css";
 import HeroCardProfile from "../HeroCardProfile/HeroCardProfile";
 
 // eslint-disable-next-line react/prop-types
- const Modal = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
+const Modal = ({ details: { character = {} } = {}, open, setModal }) => {
+  console.log(character);
   return (
-    <div className="modalContainer" >
-      <a href="#openModal" onClick={() => setModalOpen(true)}>
-        Lanzar el modal
-      </a>
-      {modalOpen && (
+    <div className="modalContainer">
+      {open && (
         <div id="openModal" className="modalDialog">
           <div className="closeButton">
             <div className="encabezado">
@@ -25,18 +16,13 @@ import HeroCardProfile from "../HeroCardProfile/HeroCardProfile";
                 href="#close"
                 title="Close"
                 className="close"
-                onClick={closeModal}
+                onClick={() => setModal({ details: {}, open: false })}
               >
                 <ImCross />
               </div>
-              <h2 className="nameCharacter">Spiderman</h2>
+              <h2 className="nameCharacter">{character.name}</h2>
             </div>
             <div className="contenido">
-              <HeroCardProfile />
-              <HeroCardProfile />
-              <HeroCardProfile />
-              <HeroCardProfile />
-              <HeroCardProfile />
               <HeroCardProfile />
             </div>
           </div>
