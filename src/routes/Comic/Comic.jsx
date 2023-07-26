@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar/Navbar";
-import "./comic.css";
+import Navbar from "../../components/Navbar/Navbar";
+import "./Comic.css";
 
 const Comic = () => {
   /*     const backgroundImageStyle = {
@@ -8,7 +8,7 @@ const Comic = () => {
       }; */
 
   return (
-    <>
+    <div>
       <Navbar />
       <div className="workSpace">
         <div className="partOne">
@@ -30,7 +30,7 @@ const Comic = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

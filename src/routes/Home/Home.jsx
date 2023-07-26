@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import HeroCard from "../components/HeroCard/HeroCard";
-import Modal from "../components/Modal/Modal";
-import Navbar from "../components/Navbar/Navbar";
 import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Modal from "../../components/Modal/Modal"
+import HeroCard from "../../components/HeroCard/HeroCard";
+
 
 const Home = () => {
   const urlAPI =
